@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load bootstrap5 %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>{% block title %}Title{% endblock title %}</title>
+</head>
+
+<body style="background-color: #160D27">
+{% block navbar %}
+{% include 'inc/_nav.html' %}
+{% endblock navbar %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+</body>
+</html>

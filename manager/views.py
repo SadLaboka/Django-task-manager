@@ -1,5 +1,6 @@
-from django.shortcuts import HttpResponse
+from django.views.generic import TemplateView
 
 
-def index(request):
-    return HttpResponse('Task manager')
+class TaskManagerView(TemplateView):
+    """View for main page"""
+    template_name = 'manager/task_manager.html'
