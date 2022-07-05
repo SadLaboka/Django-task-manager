@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 {% load bootstrap5 %}
+{% load i18n %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<title>{% block title %}Title{% endblock title %}</title>
+    <title>{% block title %}Title{% endblock title %}</title>
 </head>
 
-<body style="background-color: #160D27">
+<body style="background-color: #1d1e33">
 {% block navbar %}
 {% include 'inc/_nav.html' %}
 {% endblock navbar %}
-
+{% block content %}
+{% endblock content %}
 {% bootstrap_css %}
 {% bootstrap_javascript %}
 </body>
